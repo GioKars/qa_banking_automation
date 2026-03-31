@@ -4,3 +4,5 @@ __pycache__/
 screenshots/
 test.log
 .pytest_cache/
+report.html
+assets/
