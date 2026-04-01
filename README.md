@@ -43,10 +43,10 @@ qa_banking/
 ├── tests/
 │   ├── test_login.py
 │   ├── test_deposit.py
-│   └── test_deposit_multiple_amounts.py
-│   ├── test_deposit_negative.py
+│   ├── test_deposit_multiple_amounts.py
+│   ├── test_invalid_deposit.py
 │   ├── test_withdraw.py
-│   ├── test_withdraw_negative.py
+│   ├── test_invalid_withdraw.py
 │   └── test_withdraw_exceed_balance.py
 │
 ├── manual_testing/
@@ -54,7 +54,6 @@ qa_banking/
 │   ├── test_cases.md
 │   └── bug_reports.md
 │
-├── screenshots/
 ├── conftest.py
 ├── pytest.ini
 ├── requirements.txt

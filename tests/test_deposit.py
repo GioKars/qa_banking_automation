@@ -21,7 +21,6 @@ def test_deposit(driver, base_url):
     initial_balance = int(customer.get_balance())
     logger.info(f"Initial balance: {initial_balance}")
 
-    # customer.click_deposit()
     logger.info("Performing deposit of 100")
     customer.deposit("100")
 

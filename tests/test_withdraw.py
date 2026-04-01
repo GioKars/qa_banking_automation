@@ -19,7 +19,6 @@ def test_withdraw(driver, base_url):
 
     initial_balance = int(customer.get_balance())
     logger.info(f"Initial balance: {initial_balance}")
-    # customer.click_withdraw()
     logger.info("Performing withdraw of 100")
     customer.withdraw("100")
 
