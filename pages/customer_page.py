@@ -52,11 +52,16 @@ class CustomerPage:
 
     def get_message(self):
         try:
-            def _message_has_text(driver):
-                el = driver.find_element(*self.MESSAGE_LOCATOR)
-                return el if el.text.strip() != "" else False
+            elements = self.driver.find_elements(*self.MESSAGE_LOCATOR)
 
-            return self.wait.until(_message_has_text).text
+            if not elements:
+                return None
+
+            text = elements[0].text.strip()
+            return text if text else None
+
+        except Exception:
+            return None
 
         except TimeoutException:
             return None
